@@ -12,4 +12,4 @@ You can find the details at:
 
 If you do not care much about turnover speed, you can submit 
 the jobs to the grid. 
-You can find the [brief instruction](./grid/Readme.md "Running at Grid").
+You can find the [brief instruction](./Grid "Running at Grid").
