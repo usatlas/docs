@@ -25,7 +25,7 @@ storages.</span>
 
 <button onclick="readMoreOrLess('introLess', 'introMore', 'introBtn')" id="introBtn">More</button>
 
-## Apply computer accounts at BNL and SLAC
+## Apply computer accounts at BNL and/or SLAC
 The process to apply computer accounts takes days at both BNL and SLAC. Do NOT wait until the 
 last minutes.
 
