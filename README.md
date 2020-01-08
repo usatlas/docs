@@ -4,11 +4,11 @@
 
 <script type="text/javascript" src="/tier3docs/scripts/readMoreOrLess.js"></script>
 
-## <center>Public Documentation for US ATLAS Shared Tier 3</center>
+# Public Documentation for US ATLAS Shared Tier 3
 
 <b>[Privacy Disclaimer](/tier3docs/privacyDisclaimer)</b>
 
-### Introduction to the US ATLAS Shared Tier 3s
+## Introduction to the US ATLAS Shared Tier 3s
 US ATLAS hosted two shared Tier 3 at BNL and SLAC, also known as Analysis Facilities. These
 two faclities are available to all US ATLAS physicists and computer scientists. 
 <span id="introDots">...</span><span id="introMore">They are
@@ -24,6 +24,6 @@ storages.</span>
 
 <button onclick="readMoreOrLess('introDots', 'introMore', 'introBtn')" id="introBtn">Read more</button>
 
-### Tutorials 
+## Tutorials 
 A tutorial of analysis example at Tier3s of BNL/SLAC is available at [here](/tier3docs/Tutorial-2019Aug).
 It was initially given at the Aug. 2019 US ATLAS Week at University of Massachusetts Amherst.
