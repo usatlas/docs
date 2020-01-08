@@ -1,10 +1,11 @@
 <style>
   #introMore {display: none;}
+  #acctsMore {display: none;}
 </style>
 
 <script type="text/javascript" src="/tier3docs/scripts/readMoreOrLess.js"></script>
 
-# Public Documentation for US ATLAS Shared Tier 3
+# Public Documentation for US ATLAS Shared Tier 3s
 
 <b>[Privacy Disclaimer](/tier3docs/privacyDisclaimer)</b>
 
@@ -24,6 +25,19 @@ storages.</span>
 
 <button onclick="readMoreOrLess('introLess', 'introMore', 'introBtn')" id="introBtn">More</button>
 
-## Data Analysis Tutorials 
+## Apply computer accounts at BNL and SLAC
+<span id="acctsLess"></span>
+<span id="acctsMore">You will need to apply computer accounts at BNL and/or SLAC in order to use the 
+shared Tier 3 resources.
+<br><br>
+Applying BNL computing accounts
+<br><br>
+[Applying SLAC computing accounts](https://atlas.slac.stanford.edu/using-the-slac-computing-resources)
+is a two-step process: becoming a SLAC laboratory user, and then obtain computing account(s)
+</span>
+
+<button onclick="readMoreOrLess('acctsLess', 'acctsMore', 'acctsBtn')" id="acctsBtn">More</button>
+
+## Data analysis tutorials 
 A tutorial of analysis example at Tier3s of BNL/SLAC is available at [here](/tier3docs/Tutorial-2019Aug).
 It was initially given at the Aug. 2019 US ATLAS Week at University of Massachusetts Amherst.
