@@ -5,11 +5,11 @@ function readMoreOrLess(myLess, myMore, btnName) {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "<div class="triangle-down"></div>";
+    btnText.innerHTML = "More";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "<div class="triangle-up"></div>";
+    btnText.innerHTML = "Less";
     moreText.style.display = "inline";
   }
 }
