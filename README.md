@@ -6,12 +6,9 @@
 
 ## <center>Public Documentation for US ATLAS Shared Tier 3</center>
 
-#### <span style="color:orange">Privacy Disclaimer</span>
-<span style="color:orange"><font size="-1">
-US ATLAS documents and code samples hosted at this GitHub organization are visible to the
-general public. Please do not put personal identiable information, usernames and passwords
-and methods to access restricted US ATLAS and ATLAS (international) resources in this area.
-</font></span>
+####<center> <span style="color:red">
+[Privacy Disclaimer](/tier3docs/privacyDisclaimer.md)
+</span></center>
 
 ### Introduction to the US ATLAS Shared Tier 3s
 US ATLAS hosted two shared Tier 3 at BNL and SLAC, also known as Analysis Facilities. These
