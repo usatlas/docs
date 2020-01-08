@@ -14,7 +14,7 @@ orgniazed and managed to support US ATLAS users' need on computing resources, in
 run interactive and batch jobs, access ATLAS data, store private data, etc.
 
 These two facilities also support tools specific for users analysis, including ATLAS/CERN
-software in [CVMFS](cvmfs), Grid middleware, Rucio clients, Machine Learning packages, MPI, Jupyter
+software in CVMFS, Grid middleware, Rucio clients, Machine Learning packages, MPI, Jupyter
 Lab with PyROOT, Xcache with auto data discovery, GPUs, etc.
 
 The two facilites are backed by staffs to support software environment, unix systems and
