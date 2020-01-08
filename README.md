@@ -6,7 +6,7 @@
 
 ## <center>Public Documentation for US ATLAS Shared Tier 3</center>
 
-#### <center> <span style="color:red">[Privacy Disclaimer](/tier3docs/privacyDisclaimer.md)</span></center>
+#### <center>[Privacy Disclaimer](/tier3docs/privacyDisclaimer.md)</center>
 
 ### Introduction to the US ATLAS Shared Tier 3s
 US ATLAS hosted two shared Tier 3 at BNL and SLAC, also known as Analysis Facilities. These
