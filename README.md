@@ -26,10 +26,11 @@ storages.</span>
 <button onclick="readMoreOrLess('introLess', 'introMore', 'introBtn')" id="introBtn">More</button>
 
 ## Apply computer accounts at BNL and SLAC
+The process to apply computer accounts takes days at both BNL and SLAC. Do NOT wait until the 
+last minutes.
+
 <span id="acctsLess"></span>
-<span id="acctsMore">You will need to apply computer accounts at BNL and/or SLAC in order to use the 
-shared Tier 3 resources.
-<br><br>
+<span id="acctsMore">
 Applying BNL computing accounts
 <br><br>
 [Applying SLAC computing accounts](https://atlas.slac.stanford.edu/using-the-slac-computing-resources)
