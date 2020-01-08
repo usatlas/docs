@@ -11,7 +11,7 @@
 ## Introduction to the US ATLAS Shared Tier 3s
 US ATLAS hosted two shared Tier 3 at BNL and SLAC, also known as Analysis Facilities. These
 two faclities are available to all US ATLAS physicists and computer scientists. 
-<span id="introDots">...</span><span id="introMore">They are
+<span id="introLess">...</span><span id="introMore">They are
 orgniazed and managed to support US ATLAS users' need on computing resources, including login,
 run interactive and batch jobs, access ATLAS data, store private data, etc.
 <br><br>
@@ -22,7 +22,7 @@ Lab with PyROOT, Xcache with auto data discovery, GPUs, etc.
 The two facilites are backed by staffs to support software environment, unix systems and
 storages.</span>
 
-<button onclick="readMoreOrLess('introDots', 'introMore', 'introBtn')" id="introBtn">More</button>
+<button onclick="readMoreOrLess('introLess', 'introMore', 'introBtn')" id="introBtn">More</button>
 
 ## Tutorials 
 A tutorial of analysis example at Tier3s of BNL/SLAC is available at [here](/tier3docs/Tutorial-2019Aug).
