@@ -21,8 +21,8 @@ Lab with PyROOT, Xcache with auto data discovery, GPUs, etc.
 <br><br>
 The two facilites are backed by staffs to support software environment, unix systems and
 storages.</span>
-
-<button onclick="readMoreOrLess('introDots', 'introMore', 'introBtn')" id="introBtn">Read more</button>
+<button onclick="readMoreOrLess('introDots', 'introMore', 'introBtn')" id="introBtn">
+<div class="triangle-down"></div></button>
 
 ## Tutorials 
 A tutorial of analysis example at Tier3s of BNL/SLAC is available at [here](/tier3docs/Tutorial-2019Aug).
