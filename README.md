@@ -31,9 +31,9 @@ last minute.
 
 <span id="acctsLess"></span>
 <span id="acctsMore">
-* Applying BNL computing accounts
+Applying BNL computing accounts
 <br><br>
-* [Applying SLAC computing accounts](https://atlas.slac.stanford.edu/using-the-slac-computing-resources)
+[Applying SLAC computing accounts](https://atlas.slac.stanford.edu/using-the-slac-computing-resources)
 is a two-step process: becoming a SLAC laboratory user, and then obtain computing account(s)
 </span>
 
