@@ -3,13 +3,13 @@
 ## Table of Contents
 
 + [Login to SLAC machines](#login-to-slac-machines)
-+ [Location of this analysis example package at SLAC](#location-of-this-analysis-example-package-at-slac)
++ [Location of the analysis example package at SLAC](#location-of-this-analysis-example-package-at-slac)
 + [Env Setup and Package Building](#env-setup-and-package-building)
     + [Setup of the Release Env](#setup-of-the-release-env)
     + [Package Building](#package-building)
 + [Dataset Preparation](#dataset-preparation)
 + [Interactive Job Running at SLAC](#interactive-job-running-at-slac)
-+ [Condor Batch Job Running at SLAC](#condor-batch-job-running-at-slac)
++ [Job Running on LSF at SLAC](#condor-batch-job-running-at-slac)
 + [Using Xcache at SLAC](#using-xcache-at-slac)
     + [Using Xcache (gLFN) at BNL](#using-xcache-glfn-at-slac)
 
@@ -22,7 +22,7 @@ ssh -Y centos7.slac.stanford.edu
 
 
 ***
-## Location of the analysis package at SLAC
+## Location of the analysis example package at SLAC
 You can pull the analysis package under the same github repo 
 directory or copy from the directory at SLAC:
 ```
@@ -155,7 +155,7 @@ bsub -R 'centos7' -q atl-analq < test-LSF.sh
 ```
 which will print to the screen with someting like:
 <blockquote><pre>
-Job <468325> is submitted to queue <atl-analq>.
+Job <468325> is submitted to queue atl-analq.
 bjobs jobID    # check job status
 </pre></blockquote>
 
@@ -222,7 +222,7 @@ cd Interactive-Job
 ```
 
 
-#### Using Xcache (gLFN) at SLAC
+### Using Xcache (gLFN) at SLAC
 
 Xcache at SLAC also supports gLFN (global Logical File Name) access, 
 without knowing the exact path of a given filename.
