@@ -31,10 +31,11 @@ last minute.
 
 <span id="acctsLess"></span>
 <span id="acctsMore">
-[Applying BNL computing accounts](https://www.racf.bnl.gov/experiments/usatlas/getstarted)
+[Applying BNL computing accounts](https://www.racf.bnl.gov/experiments/usatlas/getstarted) is a two-step
+process: obtain a BNL Life or Guest Number, and then apply for a RACF/SDCC computer account.
 <br><br>
 [Applying SLAC computing accounts](https://atlas.slac.stanford.edu/using-the-slac-computing-resources)
-is a two-step process: becoming a SLAC laboratory user, and then obtain computing account(s)
+is a two-step process: becoming a SLAC laboratory user, and then obtain computing account(s).
 </span>
 
 <button onclick="readMoreOrLess('acctsLess', 'acctsMore', 'acctsBtn')" id="acctsBtn">More</button>
