@@ -31,10 +31,8 @@ last minute.
 
 <span id="acctsLess"></span>
 <span id="acctsMore">
-Applying BNL computing accounts is a three-step process (in this order): <br>
-    1 [Obtain a BNL Life or Guest Number](https://www.bnl.gov/guv/gis.php) <br>
-    2 [Complete cyber security training](https://training.bnl.gov/portal/GE-CYBERSEC) <br>
-    3 [Apply for a RACF/SDCC computer account](https://www.racf.bnl.gov/experiments/usatlas/getstarted) <br>
+Applying BNL computing accounts is a multiple-step process. 
+[The steps are summarized at here](https://www.sdcc.bnl.gov/#accounts)<br>
 <br>
 [Applying SLAC computing accounts](https://atlas.slac.stanford.edu/using-the-slac-computing-resources)
 is a two-step process: becoming a SLAC laboratory user, and then obtain computing account(s).
