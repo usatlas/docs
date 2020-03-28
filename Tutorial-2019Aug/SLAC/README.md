@@ -11,7 +11,7 @@
 + [Interactive Job Running at SLAC](#interactive-job-running-at-slac)
 + [Job Running on LSF at SLAC](#job-running-on-lsf-at-slac)
 + [Using Xcache at SLAC](#using-xcache-at-slac)
-    + [Using Xcache (gLFN) at BNL](#using-xcache-glfn-at-slac)
+    + [Using Xcache (gLFN) at SLAC](#using-xcache-glfn-at-slac)
 
 ***
 ## Login to SLAC machines
