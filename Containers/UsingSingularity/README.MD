@@ -109,12 +109,12 @@ In order to install WSL2, ensure that you are running Windows 10 **build
 18917** or higher. You can check your Windows version by opening
 **Command Prompt** and running the **ver** command.
 
-> \<verbatim\> Microsoft Windows \[Version 10.0.19587.1000\] (c) 2020
+> Microsoft Windows \[Version 10.0.19587.1000\] (c) 2020
 > Microsoft Corporation. All rights reserved.
 > 
 > C:\\Users\\Shuwei\>ver
 > 
-> Microsoft Windows \[Version 10.0.19587.1000\] \</verbatim\>
+> Microsoft Windows \[Version 10.0.19587.1000\]
 
 Actually the Windows build information has already be displayed on the
 terminal top when the **Command Prompt** app is opened.
@@ -122,11 +122,11 @@ terminal top when the **Command Prompt** app is opened.
 You can also check the Windows build info in PowerShell with command
 **systeminfo**:
 
-> \<verbatim\> PS C:\\Users\\Shuwei\> systeminfo | Select-String "^OS
+> PS C:\\Users\\Shuwei\> systeminfo | Select-String "^OS
 > Name","^OS Version"
 > 
 > OS Name: Microsoft Windows 10 Home Insider Preview OS Version:
-> 10.0.19587 N/A Build 19587 \</verbatim\>
+> 10.0.19587 N/A Build 19587
 
 If your Windows build is lower than **18917**, you can update it by
 joining the Windows Insider Program and select the **Fast ring** or the
@@ -162,16 +162,16 @@ take a while to apply.
 
 Now you can verify which WSL version used the Linux distro.
 
-> \<verbatim\> PS C:\\Users\\Shuwei\> wsl -l -v NAME STATE VERSION \*
-> Ubuntu-18.04 Stopped 2 \</verbatim\>
+> PS C:\\Users\\Shuwei\> wsl -l -v NAME STATE VERSION \*
+> Ubuntu-18.04 Stopped 2
 
 ### Use the Installed Linux on Windows 10
 
 Open **PowerShell under a regular user** and run **wsl**:
 
-> \<verbatim\> PS C:\\Users\\Shuwei\> wsl
+> PS C:\\Users\\Shuwei\> wsl
 > <yesw2000@Home-Dell660>:/mnt/c/Users/Shuwei$ echo $0 -bash
-> <yesw2000@Home-Dell660>:/mnt/c/Users/Shuwei$ \</verbatim\>
+> <yesw2000@Home-Dell660>:/mnt/c/Users/Shuwei$
 
 which starts the Linux and enter **bash**.
 
@@ -181,9 +181,9 @@ command**.
 
 If the Linux is already running, you can run "bash" to enter the Linux:
 
-> \<verbatim\> PS C:\\Users\\Shuwei\> wsl -l -v NAME STATE VERSION \*
+> PS C:\\Users\\Shuwei\> wsl -l -v NAME STATE VERSION \*
 > Ubuntu-18.04 Running 2 PS C:\\Users\\Shuwei\> bash
-> <yesw2000@Home-Dell660>:/mnt/c/Users/Shuwei$ \</verbatim\>
+> <yesw2000@Home-Dell660>:/mnt/c/Users/Shuwei$ 
 
 After all terminals associated with the Linux have been closed, the
 running Linux will stop then.
@@ -199,44 +199,59 @@ ways as on the Linux OS.
 
 You can find the Singularity usage by running **singularity -h**
 
-> \<verbatim\> lxplus$ singularity -h
+> lxplus$ singularity -h
 > 
 > Linux container platform optimized for High Performance Computing
 > (HPC) and Enterprise Performance Computing (EPC)
 > 
-> Usage: singularity \[global options...\]
+> Usage:
+>   singularity \[global options...\]
 > 
-> Description: Singularity containers provide an application
-> virtualization layer enabling mobility of compute via both application
-> and environment portability. With Singularity one is capable of
-> building a root file system that runs on any other Linux system where
-> Singularity is installed.
+> Description:
+>   Singularity containers provide an application virtualization layer enabling
+>   mobility of compute via both application and environment portability. With
+>   Singularity one is capable of building a root file system that runs on any 
+>   other Linux system where Singularity is installed.
 > 
-> Options: -d, --debug print debugging information (highest verbosity)
-> -h, --help help for singularity --nocolor print without color output
-> (default False) -q, --quiet suppress normal output -s, --silent only
-> print errors -v, --verbose print additional information --version
-> version for singularity
+> Options:
+>   -d, --debug     print debugging information (highest verbosity)
+>   -h, --help      help for singularity
+>       --nocolor   print without color output (default False)
+>   -q, --quiet     suppress normal output
+>   -s, --silent    only print errors
+>   -v, --verbose   print additional information
+>       --version   version for singularity
 > 
-> Available Commands: build Build a Singularity image cache Manage the
-> local cache capability Manage Linux capabilities for users and groups
-> config Manage various singularity configuration (root user only)
-> delete Deletes requested image from the library exec Run a command
-> within a container help Help about any command inspect Show metadata
-> for an image instance Manage containers running as services key Manage
-> OpenPGP keys oci Manage OCI containers plugin Manage Singularity
-> plugins pull Pull an image from a URI push Upload image to the
-> provided URI remote Manage singularity remote endpoints run Run the
-> user-defined default command within a container run-help Show the
-> user-defined help for an image search Search a Container Library for
-> images shell Run a shell within a container sif siftool is a program
-> for Singularity Image Format (SIF) file manipulation sign Attach a
-> cryptographic signature to an image test Run the user-defined tests
-> within a container verify Verify cryptographic signatures attached to
-> an image version Show the version for Singularity
+> Available Commands:
+>   build       Build a Singularity image
+>   cache       Manage the local cache
+>   capability  Manage Linux capabilities for users and groups
+>   config      Manage various singularity configuration (root user only)
+>   delete      Deletes requested image from the library
+>   exec        Run a command within a container
+>   help        Help about any command
+>   inspect     Show metadata for an image
+>   instance    Manage containers running as services
+>   key         Manage OpenPGP keys
+>   oci         Manage OCI containers
+>   plugin      Manage Singularity plugins
+>   pull        Pull an image from a URI
+>   push        Upload image to the provided URI
+>   remote      Manage singularity remote endpoints
+>   run         Run the user-defined default command within a container
+>   run-help    Show the user-defined help for an image
+>   search      Search a Container Library for images
+>   shell       Run a shell within a container
+>   sif         siftool is a program for Singularity Image Format (SIF) file manipulation
+>   sign        Attach a cryptographic signature to an image
+>   test        Run the user-defined tests within a container
+>   verify      Verify cryptographic signatures attached to an image
+>   version     Show the version for Singularity
 > 
-> Examples: $ singularity help \<command\> \[\<subcommand\>\] $
-> singularity help build $ singularity help instance start \</verbatim\>
+> Examples:
+>  $ singularity help <command> [<subcommand>]
+>  $ singularity help build
+>  $ singularity help instance start
 
 The most frequently used commands are: **run**, **exec**, **shell** and
 **pull**.
@@ -296,9 +311,9 @@ There are some fun exercises to play with the singularity command. One
 simple example is "Hello World", which takes the container image from
 [the Singularity container hub](https://singularity-hub.org/).
 
-> \<verbatim\> lxplus$ singularity run shub://vsoch/hello-world INFO:
+> lxplus$ singularity run shub://vsoch/hello-world INFO:
 > Downloading shub image 59.75 MiB / 59.75 MiB
 > \[================================\] 100.00% 35.87 MiB/s 1s INFO:
 > Convert SIF file to sandbox... RaawwWWWWWRRRR\! Avocado\! INFO:
-> Cleaning up image... \</verbatim\>
+> Cleaning up image...
 
