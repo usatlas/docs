@@ -1,18 +1,18 @@
 #   Using Singularity 
 
-*  <a href="#Introduction"> Introduction</a> <ul>
-*  <a href="#What_are_Containers"> What are Containers?</a>
+  [ Introduction](#Introduction")
+ *  <a href="#What_are_Containers"> What are Containers?</a>
  *  <a href="#What_is_Singularity"> What is Singularity?</a>
  
   [ Installation of Singularity](#Installation_of_Singularity) 
-*  <a href="#Singularity_on_Linux_OS"> Singularity on Linux OS</a>
- *  <a href="#Singularity_on_Mac_OS"> Singularity on Mac OS</a>
- *  <a href="#Singularity_on_Windows_10"> Singularity on Windows 10</a> <ul>
-*  <a href="#Installation_of_Windows_Subsyste"> Installation of Windows Subsystem for Linux (WSL)</a>
- *  <a href="#Running_Windows_10_build_18917_o"> Running Windows 10 build 18917 or higher</a>
- *  <a href="#Installation_of_WSL2"> Installation of WSL2</a>
- *  <a href="#Use_the_Installed_Linux_on_Windo"> Use the Installed Linux on Windows 10</a>
- *  <a href="#Singularity_Installation_on_WSL2"> Singularity Installation on WSL2</a>
+ *  <a href="#Singularity_on_Linux_OS"> Singularity on Linux OS</a>
+  *  <a href="#Singularity_on_Mac_OS"> Singularity on Mac OS</a>
+  *  <a href="#Singularity_on_Windows_10"> Singularity on Windows 10</a> <ul>
+ *  <a href="#Installation_of_Windows_Subsyste"> Installation of Windows Subsystem for Linux (WSL)</a>
+  *  <a href="#Running_Windows_10_build_18917_o"> Running Windows 10 build 18917 or higher</a>
+  *  <a href="#Installation_of_WSL2"> Installation of WSL2</a>
+  *  <a href="#Use_the_Installed_Linux_on_Windo"> Use the Installed Linux on Windows 10</a>
+  *  <a href="#Singularity_Installation_on_WSL2"> Singularity Installation on WSL2</a>
  
   [ Using Singularity](#Using_Singularity_AN1) 
 *  <a href="#Singularity_Usage_Help"> Singularity Usage Help</a>
