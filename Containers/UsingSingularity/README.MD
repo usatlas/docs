@@ -695,8 +695,7 @@ machine learning. For Atlas release containers, they are under
 >     athanalysis:21.2.101            athena:22.0.9
 >     athanalysis:21.2.101-20191208
 
-Let us take an example of release
-[AthAnalysis](/twiki/bin/view/AtlasComputing/AthAnalysis),2.2.115 under
+Let us take an example of release AthAnalysis,2.2.115 under
 `/cvmfs/unpacked.cern.ch/registry.hub.docker.com/atlas/`
 
 > 
