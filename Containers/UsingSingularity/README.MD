@@ -315,6 +315,8 @@ For additional help or support, please visit https://www.sylabs.io/docs/
 </pre></blockquote>
 </details>
 
+Test a dummy line
+
 <details>
 
 <summary>spar0101(BNL)$ singularity -h</summary>
@@ -339,6 +341,12 @@ CONTAINER USAGE COMMANDS:
   run        Launch a runscript within container                              
   shell      Run a Bourne shell within container                              
   test       Launch a testscript within container                             
+
+Available Commands:
+  build       Build a Singularity image
+  cache       Manage the local cache
+  capability  Manage Linux capabilities for users and groups
+  config      Manage various singularity configuration (root user only)
 
 CONTAINER MANAGEMENT COMMANDS:
   apps       List available apps within a container                           
