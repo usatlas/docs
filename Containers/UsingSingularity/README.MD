@@ -66,10 +66,13 @@ images from different sources.
 ## <span id="Singularity_on_Linux_OS"></span> Singularity on Linux OS
 
 Most Linux Distros should come with the Singularity. For example,
-Singularity is already available on **lxplus** machines at CERN.
+Singularity is already available on BNL/SLAC machines.
 
-    lxplus$ singularity --version
+    cent7a(SLAC)$ singularity --version
     singularity version 3.5.3-1.1.el7
+
+    spar0101(BNL)$ singularity --version
+    2.6.1-dist
 
 If it does not come with your Linux OS, you can find the installation
 instruction for the version of 3.5 (the latest one currently):
@@ -251,61 +254,113 @@ ways as on the Linux OS.
 
 You can find the Singularity usage by running **singularity -h**
 
-> 
-> 
->     lxplus$ singularity -h       
->     
->     Linux container platform optimized for High Performance Computing (HPC) and
->     Enterprise Performance Computing (EPC)
->     
->     Usage:
->       singularity [global options...]
->     
->     Description:
->       Singularity containers provide an application virtualization layer enabling
->       mobility of compute via both application and environment portability. With
->       Singularity one is capable of building a root file system that runs on any 
->       other Linux system where Singularity is installed.
->     
->     Options:
->       -d, --debug     print debugging information (highest verbosity)
->       -h, --help      help for singularity
->           --nocolor   print without color output (default False)
->       -q, --quiet     suppress normal output
->       -s, --silent    only print errors
->       -v, --verbose   print additional information
->           --version   version for singularity
->     
->     Available Commands:
->       build       Build a Singularity image
->       cache       Manage the local cache
->       capability  Manage Linux capabilities for users and groups
->       config      Manage various singularity configuration (root user only)
->       delete      Deletes requested image from the library
->       exec        Run a command within a container
->       help        Help about any command
->       inspect     Show metadata for an image
->       instance    Manage containers running as services
->       key         Manage OpenPGP keys
->       oci         Manage OCI containers
->       plugin      Manage Singularity plugins
->       pull        Pull an image from a URI
->       push        Upload image to the provided URI
->       remote      Manage singularity remote endpoints
->       run         Run the user-defined default command within a container
->       run-help    Show the user-defined help for an image
->       search      Search a Container Library for images
->       shell       Run a shell within a container
->       sif         siftool is a program for Singularity Image Format (SIF) file manipulation
->       sign        Attach a cryptographic signature to an image
->       test        Run the user-defined tests within a container
->       verify      Verify cryptographic signatures attached to an image
->       version     Show the version for Singularity
->     
->     Examples:
->       $ singularity help <command> [<subcommand>]
->       $ singularity help build
->       $ singularity help instance start
+<details>
+
+<summary>cent7a(SLAC)$ singularity -h</summary>
+<blockquote><pre>
+Linux container platform optimized for High Performance Computing (HPC) and
+Enterprise Performance Computing (EPC)
+
+Usage:
+  singularity [global options...]
+
+Description:
+  Singularity containers provide an application virtualization layer enabling
+  mobility of compute via both application and environment portability. With
+  Singularity one is capable of building a root file system that runs on any 
+  other Linux system where Singularity is installed.
+
+Options:
+  -d, --debug     print debugging information (highest verbosity)
+  -h, --help      help for singularity
+      --nocolor   print without color output (default False)
+  -q, --quiet     suppress normal output
+  -s, --silent    only print errors
+  -v, --verbose   print additional information
+      --version   version for singularity
+
+Available Commands:
+  build       Build a Singularity image
+  cache       Manage the local cache
+  capability  Manage Linux capabilities for users and groups
+  config      Manage various singularity configuration (root user only)
+  delete      Deletes requested image from the library
+  exec        Run a command within a container
+  help        Help about any command
+  inspect     Show metadata for an image
+  instance    Manage containers running as services
+  key         Manage OpenPGP keys
+  oci         Manage OCI containers
+  plugin      Manage Singularity plugins
+  pull        Pull an image from a URI
+  push        Upload image to the provided URI
+  remote      Manage singularity remote endpoints
+  run         Run the user-defined default command within a container
+  run-help    Show the user-defined help for an image
+  search      Search a Container Library for images
+  shell       Run a shell within a container
+  sif         siftool is a program for Singularity Image Format (SIF) file manipulation
+  sign        Attach a cryptographic signature to an image
+  test        Run the user-defined tests within a container
+  verify      Verify cryptographic signatures attached to an image
+  version     Show the version for Singularity
+
+Examples:
+  $ singularity help <command> [<subcommand>]
+  $ singularity help build
+  $ singularity help instance start
+
+
+For additional help or support, please visit https://www.sylabs.io/docs/
+</pre></blockquote>
+</details>
+
+<details>
+
+<summary>spar0101(BNL)$ singularity -h</summary>
+<blockquote><pre>
+USAGE: singularity [global options...] <command> [command options...] ...
+
+GLOBAL OPTIONS:
+    -d|--debug    Print debugging information
+    -h|--help     Display usage summary
+    -s|--silent   Only print errors
+    -q|--quiet    Suppress all normal output
+       --version  Show application version
+    -v|--verbose  Increase verbosity +1
+    -x|--sh-debug Print shell wrapper debugging information
+
+GENERAL COMMANDS:
+    help       Show additional help for a command or container                  
+    selftest   Run some self tests for singularity install                      
+
+CONTAINER USAGE COMMANDS:
+    exec       Execute a command within container                               
+    run        Launch a runscript within container                              
+    shell      Run a Bourne shell within container                              
+    test       Launch a testscript within container                             
+
+CONTAINER MANAGEMENT COMMANDS:
+    apps       List available apps within a container                           
+    bootstrap  *Deprecated* use build instead                                   
+    build      Build a new Singularity container                                
+    check      Perform container lint checks                                    
+    inspect    Display container's metadata                                     
+    mount      Mount a Singularity container image                              
+    pull       Pull a Singularity/Docker container to $PWD                      
+
+COMMAND GROUPS:
+    image      Container image command group                                    
+    instance   Persistent instance command group                                
+
+
+CONTAINER USAGE OPTIONS:
+    see singularity help <command>
+
+For any additional help or support visit the Singularity
+website: https://www.sylabs.io/
+</pre></blockquote>
+</details>
 
 The most frequently used commands are: **run**, **exec**, **shell** and
 **pull**.
