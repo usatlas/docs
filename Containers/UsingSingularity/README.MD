@@ -337,8 +337,8 @@ GENERAL COMMANDS:
   selftest   Run some self tests for singularity install                      
 
 CONTAINER USAGE COMMANDS:
-
-Container Usage Commands:
+Available Commands:
+  build       Build a Singularity image
   exec        Execute a command within container                               
   run         Launch a runscript within container                              
   shell       Run a Bourne shell within container                              
