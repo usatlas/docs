@@ -337,10 +337,10 @@ GENERAL COMMANDS:
   selftest   Run some self tests for singularity install                      
 
 CONTAINER USAGE COMMANDS:
-  exec       Execute a command within container                               
-  run        Launch a runscript within container                              
-  shell      Run a Bourne shell within container                              
-  test       Launch a testscript within container                             
+  exec        Execute a command within container                               
+  run         Launch a runscript within container                              
+  shell       Run a Bourne shell within container                              
+  test        Launch a testscript within container                             
 
 Available Commands:
   build       Build a Singularity image
@@ -349,13 +349,13 @@ Available Commands:
   config      Manage various singularity configuration (root user only)
 
 CONTAINER MANAGEMENT COMMANDS:
-  apps       List available apps within a container                           
-  bootstrap  *Deprecated* use build instead                                   
-  build      Build a new Singularity container                                
-  check      Perform container lint checks                                    
-  inspect    Display container's metadata                                     
-  mount      Mount a Singularity container image                              
-  pull       Pull a Singularity/Docker container to $PWD                      
+  apps        List available apps within a container                           
+  bootstrap   *Deprecated* use build instead                                   
+  build       Build a new Singularity container                                
+  check       Perform container lint checks                                    
+  inspect     Display container's metadata                                     
+  mount       Mount a Singularity container image                              
+  pull        Pull a Singularity/Docker container to $PWD                      
 
 COMMAND GROUPS:
   image      Container image command group                                    
