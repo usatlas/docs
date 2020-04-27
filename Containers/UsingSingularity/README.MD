@@ -315,7 +315,6 @@ For additional help or support, please visit https://www.sylabs.io/docs/
 </pre></blockquote>
 </details>
 
-Test a dummy line
 
 <details>
 
@@ -333,35 +332,27 @@ GLOBAL OPTIONS:
   -x|--sh-debug Print shell wrapper debugging information
 
 GENERAL COMMANDS:
-  help       Show additional help for a command or container                  
-  selftest   Run some self tests for singularity install                      
+  help       Show additional help for a command or container
+  selftest   Run some self tests for singularity install
 
 CONTAINER USAGE COMMANDS:
-Available Commands:
-  build       Build a Singularity image
-  exec        Execute a command within container                               
-  run         Launch a runscript within container                              
-  shell       Run a Bourne shell within container                              
-  test        Launch a testscript within container                             
-
-Available Commands:
-  build       Build a Singularity image
-  cache       Manage the local cache
-  capability  Manage Linux capabilities for users and groups
-  config      Manage various singularity configuration (root user only)
+  exec        Execute a command within container
+  run         Launch a runscript within container
+  shell       Run a Bourne shell within container
+  test        Launch a testscript within container
 
 CONTAINER MANAGEMENT COMMANDS:
-  apps        List available apps within a container                           
-  bootstrap   *Deprecated* use build instead                                   
-  build       Build a new Singularity container                                
-  check       Perform container lint checks                                    
-  inspect     Display container's metadata                                     
-  mount       Mount a Singularity container image                              
-  pull        Pull a Singularity/Docker container to $PWD                      
+  apps        List available apps within a container
+  bootstrap   *Deprecated* use build instead
+  build       Build a new Singularity container
+  check       Perform container lint checks
+  inspect     Display container's metadata
+  mount       Mount a Singularity container image
+  pull        Pull a Singularity/Docker container to $PWD
 
 COMMAND GROUPS:
-  image      Container image command group                                    
-  instance   Persistent instance command group                                
+  image      Container image command group
+  instance   Persistent instance command group
 
 CONTAINER USAGE OPTIONS:
    see singularity help <command>
