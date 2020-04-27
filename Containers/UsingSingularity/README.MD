@@ -318,17 +318,18 @@ For additional help or support, please visit https://www.sylabs.io/docs/
 <details>
 
 <summary>spar0101(BNL)$ singularity -h</summary>
-```
+
+<blockquote><pre>
 USAGE: singularity [global options...] <command> [command options...] ...
 
 GLOBAL OPTIONS:
-    -d|--debug    Print debugging information
-    -h|--help     Display usage summary
-    -s|--silent   Only print errors
-    -q|--quiet    Suppress all normal output
-       --version  Show application version
-    -v|--verbose  Increase verbosity +1
-    -x|--sh-debug Print shell wrapper debugging information
+   -d|--debug    Print debugging information
+   -h|--help     Display usage summary
+   -s|--silent   Only print errors
+   -q|--quiet    Suppress all normal output
+      --version  Show application version
+   -v|--verbose  Increase verbosity +1
+   -x|--sh-debug Print shell wrapper debugging information
 
 GENERAL COMMANDS:
     help       Show additional help for a command or container                  
@@ -359,7 +360,7 @@ CONTAINER USAGE OPTIONS:
 
 For any additional help or support visit the Singularity
 website: https://www.sylabs.io/
-```
+</pre></blockquote>
 </details>
 
 The most frequently used commands are: **run**, **exec**, **shell** and
