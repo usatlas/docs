@@ -16,17 +16,17 @@ You will be given a GPFS space since Jupyter won't be able to write to AFS. This
 
 ## An alternative way to use SLAC Jupyter
 
-The above atlas-jupyter/test instance resides in a Singularity image. You can use it at anywhere as long as the host can access following CVMFS file. For example, on cent7a.slac.stanford.edu, you can run this command by hand:
+The above atlas-jupyter/test instance resides in a Singularity image. You can use it at anywhere as long as the host can access the following CVMFS file. For example, on cent7a.slac.stanford.edu, you can run this command by hand:
 
 `singulairty run -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac.sif`
 
-(add --nv after `"run"` if the host support Nvidia CUDA GPUs). When you see a line like the following prints out,
+(add --nv after `"run"` if the host supports Nvidia CUDA GPUs). When you see it prints out a line like the following,
 
 `http://localhost:8888/?token=ec4d404fe69d2ff760d611c0509a9e8ac770c7f46ac32860`
 
 then use `ssh -L 8888:localhost:8888 cent7a.slac.stanford.edu` to create a SSH tunnel. After this, paste the above URL in your browser to access your jupyter instance.
 
-Note `centos7.slac.stanford.edu` is a DNS alias of several machines `cent7[a-d].slac.stanford.edu`. Do not use the DNS alias `centos7` in the above case, use `cent7[a-d]`.
+Note `centos7.slac.stanford.edu` is a DNS alias of several machines `cent7[a-d].slac.stanford.edu`. Do not use the DNS alias `centos7` in the above case, use `cent7[a-d]` instead.
 
 ## Kernels and extensions
 
