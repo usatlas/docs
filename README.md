@@ -43,3 +43,6 @@ is a two-step process: becoming a SLAC laboratory user, and then obtain computin
 ## Data analysis tutorials 
 [A tutorial of analysis example at Tier3s of BNL/SLAC is available at here](/tier3docs/Tutorial-2019Aug).
 It was initially given at the Aug. 2019 US ATLAS Week at University of Massachusetts Amherst.
+
+## JupyterLab at Tier 3s
+Documents, examples and entry points of the [JupyterLab at BNL and SLAC](jupyter/JupyterAtTier3s.md). 
