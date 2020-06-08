@@ -9,5 +9,5 @@ One of the services available at the US ATLAS shared Tier 3s is the Jupyter Lab 
 
 Use the following links to access the Jupyter environment at the shared Tier 3s, or access site related documents on Jupyter.
 
-* [BNL JupyterLab](https://jupyter.sdcc.bnl.gov) [documentation](BNLjupyter.md) and [examples](BNLexamples.md)
-* [SLAC JupyterLab](https://sdf.slac.stanford.edu) [documentation](SLACjupyter.md) and [examples](SLACexamples.md)
+* [BNL JupyterLab](https://jupyter.sdcc.bnl.gov), [documentation](BNLjupyter.md) and [examples](BNLexamples.md)
+* [SLAC JupyterLab](https://sdf.slac.stanford.edu), [documentation](SLACjupyter.md) and [examples](SLACexamples.md)

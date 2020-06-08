@@ -30,7 +30,7 @@ Note `centos7.slac.stanford.edu` is a DNS alias of several machines `cent7[a-d].
 
 ## Kernels and extensions
 
-The Jupyter environment provide several kernels and extensions. This includes:
+The Jupyter environment provides several kernels and extensions. This includes:
 1. python2 with pyroot and uproot. By default, <b>AnalysisBase,21.2.111</b> is loaded before the pyroot2 kernel is launched. To overwrite this, create a file [$HOME/notebooks/.user_setups](SLACuser_setups.sh) in your home directory (even if your home directory is in AFS)
 2. ROOT C++. The ATLAS environment is set before the kernel is launched. The overwrite method is the same as the above. 
 3. python3 with pyroot and uproot. This kernel also includes ML packages such as Tensoflow and Keras for Nvidia GPUs. To use the GPU, choose "# of GPUs" and "GPU type" before launching Jupyter.
