@@ -7,8 +7,8 @@ Click the above title/link to access the SLAC JupyterLab. Before you login, chec
 Once you login, click "Interactive Apps" from the top menu bar. Then choose "Jupyter". You will need to make a few choices:
 
 1. In "Jupyter Instance" box, choose "atlas-jupyter/test". You can choose Jupyter Instances for other experiments but there is no guarantee that those instances will work for you.
-2. check "Use JupyterLab instead of Jupyter Notebook?" box.
-3. choose hours, # CPUs, memory, # GPUs and GPU type, then "launch". Note that your Jupyter work runs as a SLURM job. So choose only what you need to ensure speed launch of your job.
+2. Check the "Use JupyterLab instead of Jupyter Notebook?" box.
+3. Choose hours, # CPUs, memory, # GPUs and GPU type, then click "launch". Note that your Jupyter work runs as a SLURM job. So choose only what you need to ensure speedy launching of your job.
 
 ### For AFS users
 
