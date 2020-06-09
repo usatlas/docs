@@ -8,5 +8,11 @@ One of the services available at the US ATLAS shared Tier 3s is the Jupyter Lab 
 
 Use the following links to access the Jupyter environment at the shared Tier 3s, or access site specific documents on Jupyter.
 
-* [BNL JupyterLab](https://jupyter.sdcc.bnl.gov), [documentation](BNLjupyter.md) and [examples](BNLexamples.md)
-* [SLAC JupyterLab](https://sdf.slac.stanford.edu), [documentation](SLACjupyter.md) and [examples](examples)
+* [BNL JupyterLab](https://jupyter.sdcc.bnl.gov) and [documentation](BNLjupyter.md).
+* [SLAC JupyterLab](https://sdf.slac.stanford.edu) and [documentation](SLACjupyter.md).
+
+# Examples of using Jupyter to analysis xAODs
+
+* [How to get inform about an xAOD in python](examples/xAODcheck.md)
+* [Read xAOD using PyROOT](examples/pyROOT_example.ipynb)
+* [Info about uproot and xAOD](examples/convert_specific_variables.py)
