@@ -13,6 +13,6 @@ Use the following links to access the Jupyter environment at the shared Tier 3s,
 
 # Examples of using Jupyter to analysis xAODs
 
-* [How to get inform about an xAOD in python](examples/xAODcheck.md)
+* [How to get information about an xAOD in python](examples/xAODcheck.md)
 * [Read xAOD using PyROOT](examples/pyROOT_example.ipynb)
 * [Info about uproot and xAOD](examples/convert_specific_variables.py)
