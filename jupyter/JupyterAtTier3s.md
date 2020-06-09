@@ -11,7 +11,7 @@ Use the following links to access the Jupyter environment at the shared Tier 3s,
 * [BNL JupyterLab](https://jupyter.sdcc.bnl.gov) and [documentation](BNLjupyter.md).
 * [SLAC JupyterLab](https://sdf.slac.stanford.edu) and [documentation](SLACjupyter.md).
 
-# Examples of using Jupyter to analysis xAODs
+# Examples of using Jupyter to analyze xAODs
 
 * [How to get information about an xAOD in python](examples/xAODcheck.md)
 * [Read xAODs using PyROOT](https://github.com/usatlas/tier3docs/blob/master/jupyter/examples/pyROOT_example.ipynb)
