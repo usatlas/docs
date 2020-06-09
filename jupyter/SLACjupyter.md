@@ -12,7 +12,7 @@ Once you login, click "Interactive Apps" from the top menu bar. Then choose "Jup
 
 ### For AFS users
 
-You will be given a GPFS space since Jupyter won't be able to write to AFS. This means that you can't not create or modify a Jupyter notebook when your JupyterLab's left panel is in a AFS directory. New users since later 2017 are likely GPFS users and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do `pwd`.
+You will be given a GPFS space since Jupyter won't be able to write to AFS. This means that you can not create or modify a file when your JupyterLab's left panel is in an AFS directory. New users (since later 2017) likely will have their home directories on GPFS, and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do `pwd`.
 
 ## An alternative way to use SLAC Jupyter
 
@@ -33,7 +33,7 @@ Note `centos7.slac.stanford.edu` is a DNS alias of several machines `cent7[a-d].
 The Jupyter environment provides several kernels and extensions. This includes:
 1. python2 with pyroot and uproot. By default, <b>AnalysisBase,21.2.111</b> is loaded before the pyroot2 kernel is launched. To overwrite this, create a file [$HOME/notebooks/.user_setups](SLACuser_setups.txt) in your home directory (even if your home directory is in AFS)
 2. ROOT C++. The ATLAS environment is set before the kernel is launched. The overwrite method is the same as the above. 
-3. python3 with pyroot and uproot. This kernel also includes ML packages such as Tensoflow and Keras for Nvidia GPUs. To use the GPU, choose "# of GPUs" and "GPU type" before launching Jupyter.
+3. python3 with pyroot and uproot. This kernel also includes ML packages such as Tensorflow and Keras for Nvidia GPUs. To use the GPU, choose "# of GPUs" and "GPU type" before launching Jupyter.
 4. Terminal console for simple interactive use, e.g. file managements. It also include python2.7/python3, gcc/g++, gdb, make, cmake3, xrootd-clients, openssh-client, curl, vi, etc.
 5. Markdown document editor and previewer. You can edit and preview in two tabs simultaneously. 
 

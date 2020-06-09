@@ -3,7 +3,7 @@ One of the services available at the US ATLAS shared Tier 3s is the Jupyter Lab 
 
 1. python2 with pyroot and uproot, some allows users to load an ATLAS analysis releases in order to access xAODs.
 2. python3 with pyroot and uproot.
-3. python3 with ML packages such as Tensoflow and Keras, with support of Nvidia GPUs.
+3. python3 with ML packages such as Tensorflow and Keras, with support of Nvidia GPUs.
 4. Terminal console for simple interactive use, e.g. file managements.
 
 Use the following links to access the Jupyter environment at the shared Tier 3s, or access site specific documents on Jupyter.
