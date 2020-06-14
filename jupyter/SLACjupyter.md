@@ -1,6 +1,26 @@
 # [The SLAC JupyterLab](https://sdf.slac.stanford.edu)
 
-Click the above title/link to access the SLAC JupyterLab. Before you login, check whether your home directory is in /gpfs. If so, continue the login process. If your home directory in /afs, please e-mail unix-admin@slac.stanford.edu with a message "my home dir is in AFS but I want to use JupyterLab at SDF", and wait for their green light.
+Click the above title/link to access the SLAC JupyterLab. Before you login, check whether your home directory is in /gpfs. If so, continue the login process. 
+
+New users (since later 2017) likely will have their home directories on GPFS, and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do `df .`. 
+
+### For AFS users
+
+If your home directory in /afs, please e-mail unix-admin@slac.stanford.edu with a message "my home dir is in AFS but I want to use JupyterLab at SDF", and wait for their green light.
+
+(You don't need to care about this: The unix-admin will create a directory `/gpfs/slac/staas/fs1/g/jupyter/$(id -gn)/$(id -un)` and make you the owner.)
+
+After you get a green light from unix-admin, login the centos7.slac.stanford.edu and run ```sh /gpfs/slac/staas/fs1/g/jupyter/ood/convert.sh```. You only need to do this once. Note that this script will rename a few of your directories by adding a ".orig" to them:
+```
+$HOME/ondemand  
+$HOME/.local/share/jupyter
+$HOME/.jupyter
+$HOME/.ipython
+```
+
+You should also ask for a GPFS space at `/gpfs/slac/atlas/fs1/u/$(id -un)`. You can include this request along with the e-mail to unix-admin.
+
+You may ask why? This is because Jupyter via the above SLAC JupyterLab link won't be able to write to AFS. So you can not create or modify a file when your JupyterLab's left panel is in an AFS directory. Hence you need a GPFS space.
 
 ## How to launch JupyterLab at SLAC
 
@@ -10,17 +30,13 @@ Once you login, click "Interactive Apps" from the top menu bar. Then choose "Jup
 2. Check the "Use JupyterLab instead of Jupyter Notebook?" box.
 3. Choose hours, # CPUs, memory, # GPUs and GPU type, then click "launch". Note that your Jupyter work runs as a SLURM job. So choose only what you need to ensure speedy launching of your job.
 
-### For AFS users
-
-You will be given a GPFS space since Jupyter won't be able to write to AFS. This means that you can not create or modify a file when your JupyterLab's left panel is in an AFS directory. New users (since later 2017) likely will have their home directories on GPFS, and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do `pwd`.
-
 ## An alternative way to use SLAC Jupyter
 
 The above atlas-jupyter/20200502 instance resides in a Singularity image. You can use it at anywhere as long as the host can access the following CVMFS file. For example, on cent7a.slac.stanford.edu, you can run this command by hand:
 
 `singularity run -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac.sif`
 
-(add --nv after `"run"` if the host supports Nvidia CUDA GPUs). When you see it prints out a line like the following,
+(add `--nv` after `"run"` if the host supports Nvidia CUDA GPUs). When you see it prints out a line like the following,
 
 `http://localhost:8888/?token=ec4d404fe69d2ff760d611c0509a9e8ac770c7f46ac32860`
 
