@@ -1,6 +1,6 @@
 # [The SLAC JupyterLab](https://sdf.slac.stanford.edu)
 
-## Talbe of contents
+## Table of contents
 + [A note for AFS users](#a-note-for-afs-users)
 + [How to launch JupyterLab at SLAC](#how-to-launch-jupyterlab-at-slac)
 + [Run your own Jupyter environment](#run-your-own-jupyter-environment)
