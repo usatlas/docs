@@ -43,12 +43,17 @@ The ATLAS instance we built may not satisfy your need. If you have your own Jupy
 
 1. Following the same steps above to launch Jupyter at SLAC.
 2. Instead of choosing the "atlas-jupyter..." instance, you choose "Custom Singularity Image" or "Custom Conda Environment".
-3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to prepare launching your Jupyter environment. An example of your Shell script is:<p>
-`export SINGULARITY_IMAGE_PATH=/afs/slac/package/singularity/images/slac-ml/20200211.0/slac-jupyterlab@20200211.0.sif`<p>
-`function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/afs ${SINGULARITY_IMAGE_PATH} jupyter $@; }`<p>
-    (you can also setup Conda here)
-4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command called "jupyter" for it to use. It will then run one of the following commands, depend on whether you choose Jupyter Notebook or Jupyter Lab, to launch your Jupyter environment:<p>
-`jupyter notebook --config="${CONFIG_FILE}"`<p>
+3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to prepare launching your Jupyter environment. An example of your Shell script is:
+
+`export SINGULARITY_IMAGE_PATH=/afs/slac/package/singularity/images/slac-ml/20200211.0/slac-jupyterlab@20200211.0.sif`
+
+`function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/afs ${SINGULARITY_IMAGE_PATH} jupyter $@; }`
+
+(you can also setup Conda here)
+4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command called "jupyter" for it to use. It will then run one of the following commands, depend on whether you choose Jupyter Notebook or Jupyter Lab, to launch your Jupyter environment:
+
+`jupyter notebook --config="${CONFIG_FILE}"`
+
 `jupyter lab --config="${CONFIG_FILE}"`
 
 ## An alternative way to use the ATLAS Jupyter environment at SLAC
