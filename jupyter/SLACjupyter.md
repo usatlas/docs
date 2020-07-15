@@ -39,16 +39,16 @@ Once you login, click "Interactive Apps" from the top menu bar. Then choose "Jup
 
 ## Run your own Jupyter environment
 
-The ATLAS instance we built may not satisfy your need. If you have your own Jupyter environment that are accessible from SLAC (on SLAC disk or in CVMFS), you may be able to run it on SLAC's Jupyter infrastracture. To do so:
+The ATLAS instance we built may not satisfy your need. If you have your own Jupyter environment that is accessible from SLAC (on SLAC disk or in CVMFS), you may be able to run it on SLAC's Jupyter infrastracture. To do so:
 
 1. Following the same steps above to launch Jupyter at SLAC.
 2. Instead of choosing the "atlas-jupyter..." instance, you choose "Custom Singularity Image" or "Custom Conda Environment".
 3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to prepare launching your Jupyter environment. Below is an example of your Shell script using Singularity (you can also setup Conda here)
 ```
-export SINGULARITY_IMAGE_PATH=/afs/slac/.../my_singularity_image.sif
-function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/afs ${SINGULARITY_IMAGE_PATH} jupyter $@; }
+export SINGULARITY_IMAGE=/afs/slac/.../my_singularity_image.sif
+function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/afs ${SINGULARITY_IMAGE} jupyter $@; }
 ```
-4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command (or Shell function) called "jupyter" for it to use. It will then run one of the following commands, depend on whether you choose Jupyter Notebook or Jupyter Lab, to launch your Jupyter environment:
+4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command (or Shell function) called "jupyter" for it to run. It will then run one of the following commands, depend on whether you choose Jupyter Notebook or Jupyter Lab, to launch your Jupyter environment:
 ```
 jupyter notebook --config="${CONFIG_FILE}"
 jupyter lab --config="${CONFIG_FILE}"
