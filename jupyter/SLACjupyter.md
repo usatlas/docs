@@ -48,7 +48,7 @@ The ATLAS instance we built may not satisfy your need. If you have your own Jupy
 export SINGULARITY_IMAGE_PATH=/afs/slac/package/singularity/images/slac-ml/20200211.0/slac-jupyterlab@20200211.0.sif
 function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/afs ${SINGULARITY_IMAGE_PATH} jupyter $@; }
 ```
-4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command called "jupyter" for it to use. It will then run one of the following commands, depend on whether you choose Jupyter Notebook or Jupyter Lab, to launch your Jupyter environment:
+4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command (or Shell function) called "jupyter" for it to use. It will then run one of the following commands, depend on whether you choose Jupyter Notebook or Jupyter Lab, to launch your Jupyter environment:
 ```
 jupyter notebook --config="${CONFIG_FILE}"
 jupyter lab --config="${CONFIG_FILE}"
