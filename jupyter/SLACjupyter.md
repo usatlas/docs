@@ -2,7 +2,7 @@
 
 ## Talbe of contents
 + [A note for AFS users](#a-note-for-afs-users)
-+ [How to launch JupyterLab at SLAC](#how-to-launch-jupyter-at-slac)
++ [How to launch JupyterLab at SLAC](#how-to-launch-jupyterlab-at-slac)
 + [Run your own Jupyter environment](#run-your-own-jupyter-environment)
 + [An alternative way to use the ATLAS Jupyter environment at SLAC](#an-alternative-way-to-use-the-atlas-jupyter-environment-at-slac)
 + [Kernels and extensions in the ATLAS Jupyter environment](#kernels-and-extensions-in-the-atlas-jupyter-environment)
