@@ -45,7 +45,7 @@ The ATLAS instance we built may not satisfy your need. If you have your own Jupy
 2. Instead of choosing the "atlas-jupyter..." instance, you choose "Custom Singularity Image" or "Custom Conda Environment".
 3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to prepare launching your Jupyter environment. Below is an example of your Shell script using Singularity (you can also setup Conda here)
 ```
-export SINGULARITY_IMAGE_PATH=/afs/slac/package/singularity/images/slac-ml/20200211.0/slac-jupyterlab@20200211.0.sif
+export SINGULARITY_IMAGE_PATH=/afs/slac/.../my_singularity_image.sif
 function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/afs ${SINGULARITY_IMAGE_PATH} jupyter $@; }
 ```
 4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command (or Shell function) called "jupyter" for it to use. It will then run one of the following commands, depend on whether you choose Jupyter Notebook or Jupyter Lab, to launch your Jupyter environment:
