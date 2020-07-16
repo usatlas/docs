@@ -80,6 +80,6 @@ The Jupyter environment provides several kernels and extensions. This includes:
 
 ## Getting help
 
-Please use the following e-mail addresses to get help. The division below is not strict. Questions will be routed to approriate staff members.
+Please use the following e-mail addresses to get help. The division below is not strict. Questions will be routed to appropriate staff members.
 1. Use atlas-us-slac-acf@cern.ch for ATLAS specific questions and requestions, including ATLAS software related issues.
 2. Use unix-admin@slac.stanford.edu for all other questions
