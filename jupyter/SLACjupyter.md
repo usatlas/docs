@@ -6,12 +6,13 @@
 + [Run your own Jupyter environment](#run-your-own-jupyter-environment)
 + [An alternative way to use the ATLAS Jupyter environment at SLAC](#an-alternative-way-to-use-the-atlas-jupyter-environment-at-slac)
 + [Kernels and extensions in the ATLAS Jupyter environment](#kernels-and-extensions-in-the-atlas-jupyter-environment)
++ [Getting help](#getting-help)
 
-Click the above title/link to access the SLAC JupyterLab. Before you login, check whether your home directory is in /gpfs. If so, continue the login process. 
+Before clicking the above title/link to access the SLAC JupyterLab, please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). Also before you login, check whether your home directory is in /gpfs. If so, continue the login process. 
 
-New users (since later 2017) likely will have their home directories on GPFS, and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do ` df . `. 
+New users (since later 2017) likely will have their home directories on GPFS, and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do `df .`. 
 
-### A note for AFS users
+## A note for AFS users
 
 If your home directory in /afs, please e-mail unix-admin@slac.stanford.edu with a message "my home dir is in AFS but I want to use JupyterLab at SDF", and wait for their green light.
 
@@ -43,7 +44,7 @@ The ATLAS instance we built may not satisfy your need. If you have your own Jupy
 
 1. Following the same steps above to launch Jupyter at SLAC.
 2. Instead of choosing the "atlas-jupyter..." instance, you choose "Custom Singularity Image" or "Custom Conda Environment".
-3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to prepare launching your Jupyter environment. Below is an example of your Shell script using Singularity (you can also setup Conda here)
+3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to the box to prepare launching your Jupyter environment. Below is an example of your Shell script using Singularity (you can also setup Conda here)
 ```
 export SINGULARITY_IMAGE=/afs/slac/.../my_singularity_image.sif
 function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/afs ${SINGULARITY_IMAGE} jupyter $@; }
@@ -77,3 +78,8 @@ The Jupyter environment provides several kernels and extensions. This includes:
 4. Terminal console for simple interactive use, e.g. file managements. It also include python2.7/python3, gcc/g++, gdb, make, cmake3, xrootd-clients, openssh-client, curl, vi, etc.
 5. Markdown document editor and previewer. You can edit and preview in two tabs simultaneously. 
 
+## Getting help
+
+Please use the following e-mail addresses to get help. The division below is not strict. Questions will be routed to approriate staff members.
+1. Use atlas-us-slac-acf@cern.ch for ATLAS specific questions and requestions, including ATLAS software related issues.
+2. Use unix-admin@slac.stanford.edu for all other questions
