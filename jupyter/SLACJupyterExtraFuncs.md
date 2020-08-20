@@ -36,6 +36,6 @@ If your home directory is in AFS, ssh to ocio-gpu01.slac.stanford.edu and run th
 ```
 singularity exec -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac-w-slurm-cli-20200714.sif python3 -m pip install dask-jobqueue distributed
 ```
-To test whether it works, try [this python script](dask.slurm.test.py.txt) in JupyterLab. Please pay to the line `python="/usr/bin/python3"` in the script - do not forget about it. 
+To test whether it works, try [this python script](dask.slurm.test.py.txt) in JupyterLab. Please pay attention to the line `python="/usr/bin/python3"` in the script - do not forget about it. 
 
 
