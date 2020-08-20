@@ -6,9 +6,10 @@
 + [Run your own Jupyter environment](#run-your-own-jupyter-environment)
 + [An alternative way to use the ATLAS Jupyter environment at SLAC](#an-alternative-way-to-use-the-atlas-jupyter-environment-at-slac)
 + [Kernels and extensions in the ATLAS Jupyter environment](#kernels-and-extensions-in-the-atlas-jupyter-environment)
++ [Extend ATLAS JupyterLab Functionalities](#extend-atlas-jupyterlab-functionalities)
 + [Getting help](#getting-help)
 
-Before clicking the above title/link to access the SLAC JupyterLab, please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). Also before you login, check whether your home directory is in /gpfs. If so, continue the login process. 
+Before accessing [the SLAC JupyterLab](https://sdf.slac.stanford.edu), please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). Also before you login, check whether your home directory is in /gpfs. If so, continue the login process. 
 
 New users (since later 2017) likely will have their home directories on GPFS, and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do `df .`. 
 
@@ -59,7 +60,7 @@ jupyter lab --config="${CONFIG_FILE}"
 
 The above atlas-jupyter/20200502 instance resides in a Singularity image. You can use it at anywhere as long as the host can access the following CVMFS file. For example, on cent7a.slac.stanford.edu, you can run this command by hand:
 
-`singularity run -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac.sif`
+`singularity run -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac-w-slurm.sif`
 
 (add `--nv` after `"run"` if the host supports Nvidia CUDA GPUs). When you see it prints out a line like the following,
 
@@ -77,6 +78,10 @@ The Jupyter environment provides several kernels and extensions. This includes:
 3. python3 with pyroot and uproot. This kernel also includes ML packages such as Tensorflow and Keras for Nvidia GPUs. To use the GPU, choose "# of GPUs" and "GPU type" before launching Jupyter. 
 4. Terminal console for simple interactive use, e.g. file managements. It also include python2.7/python3, gcc/g++, gdb, make, cmake3, xrootd-clients, openssh-client, curl, vi, etc.
 5. Markdown document editor and previewer. You can edit and preview in two tabs simultaneously. 
+
+## Extend ATLAS JupyterLab Functionalities
+
+Python's pip module allows users to add packages to the JupyterLab environment as they need. For example, one can use PYCUDA and DASK distributed scheduling with SLURM. Check out [this doc](SLACJupyterExtraFuncs.md) on how to do that.
 
 ## Getting help
 
