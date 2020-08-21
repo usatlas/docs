@@ -25,7 +25,7 @@ cluster = SLURMCluster(
     python="/usr/bin/python3",
     job_extra=['--account=shared', '--partition=shared']
 )
-cluster.scale(jobs=4)  # ask for 10 jobs
+cluster.scale(jobs=4)  # ask for 4 jobs
 
 from dask.distributed import Client
 client = Client(cluster)

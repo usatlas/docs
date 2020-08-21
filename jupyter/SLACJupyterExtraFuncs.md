@@ -19,7 +19,7 @@ unset PYTHONPATH
 export PATH=$PATH:/usr/local/cuda/bin
 python3 -m pip install pycuda
 ```
-To test whether your PYCUDA works, try [this python script](pycuda.test.py.txt) in JupyterLab. The script contains two URLs that explain the concept of CUDA thread blocks and thread indexing.
+To test whether your PYCUDA works, try [this python script](pycuda.test.py.txt) in JupyterLab. The script contains two URLs that explain the concepts of CUDA thread blocks and thread indexing.
 
 ## Use DASK with SLURM
 
