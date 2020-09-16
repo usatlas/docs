@@ -40,7 +40,7 @@ is a two-step process: becoming a SLAC laboratory user, and then obtain computin
 
 <button onclick="readMoreOrLess('acctsLess', 'acctsMore', 'acctsBtn')" id="acctsBtn">More</button>
 
-### <h3 style="color:orange">New SLAC computing environment and change to SLAC computing account</h3>
+### <span style="color:orange">New SLAC computing environment and change to SLAC computing account</span>
 
 Note: The existing computing accounts and environment for ATLAS will continue until the hardware retires, which is a few years from now (September 2020).
 
