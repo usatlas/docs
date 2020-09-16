@@ -10,7 +10,7 @@ Use the following links to access the Jupyter environment at the AFs, or access 
 
 * [BNL JupyterLab](https://jupyter.sdcc.bnl.gov) and [documents](BNLjupyter.md).
 * [SLAC JupyterLab](https://sdf.slac.stanford.edu) and [documents](SLACjupyter.md).
-   * The SLAC JupyterLab link will change in the near future as we move to [SDF](../README.md). You can explore it now by going to [Jupyter page on SDF and click "Jupyter portal"](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter)
+   * The SLAC JupyterLab link will change in the near future as we move to [SDF](../README.md). You can explore it now by going to [Jupyter page on SDF and click "Jupyter portal"](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter). When asked to choose an identity provider, please choose "SLAC National Accelerator Laboratory" and then use your ["SLAC ID"](../README.md) to login.
 
 # Examples of using Jupyter to analyze xAODs
 
