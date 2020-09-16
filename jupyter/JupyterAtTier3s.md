@@ -1,15 +1,16 @@
-# Jupyter At Shared Tier 3s
-One of the services available at the US ATLAS shared Tier 3s is the Jupyter Lab enviroment. Some of the Jupyter kernels available there includes:
+# Jupyter At US ATLAS AFs
+One of the services available at the US ATLAS analysis facilities is the Jupyter Lab enviroment. Some of the Jupyter kernels available there includes:
 
 1. python2 with pyroot and uproot, some allows users to load an ATLAS analysis releases in order to access xAODs.
 2. python3 with pyroot and uproot.
 3. python3 with ML packages such as Tensorflow and Keras, with support of Nvidia GPUs.
 4. Terminal console for simple interactive use, e.g. file managements.
 
-Use the following links to access the Jupyter environment at the shared Tier 3s, or access site specific documents on Jupyter.
+Use the following links to access the Jupyter environment at the AFs, or access site specific documents on Jupyter.
 
 * [BNL JupyterLab](https://jupyter.sdcc.bnl.gov) and [documents](BNLjupyter.md).
 * [SLAC JupyterLab](https://sdf.slac.stanford.edu) and [documents](SLACjupyter.md).
+   * The SLAC JupyterLab link may change in the near future as we move to [SDF](../README.md).
 
 # Examples of using Jupyter to analyze xAODs
 
