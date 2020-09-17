@@ -4,7 +4,7 @@ Though pip, you can add more packages to your python/Jupyter. The folloing are e
 
 ## Install PYCUDA
 
-If your home directory is in GPFS, open a Terminal in JupyterLab and run the following command:
+If you are using SDF or if your home directory is in GPFS, open a Terminal in JupyterLab and run the following command:
 ```
 python3 -m pip install pycuda
 ````
@@ -19,6 +19,8 @@ unset PYTHONPATH
 export PATH=$PATH:/usr/local/cuda/bin
 python3 -m pip install pycuda
 ```
+
+
 To test whether your PYCUDA works, try [this python script](pycuda.test.py.txt) in JupyterLab. The script contains two URLs that explain the concepts of CUDA thread blocks and thread indexing.
 
 ## Use DASK with SLURM
@@ -32,7 +34,7 @@ If you home directory is in GPFS, open a Terminal in JupyterLab and run the foll
 python3 -m pip install dask-jobqueue distributed
 ````
 
-If your home directory is in AFS, ssh to ocio-gpu01.slac.stanford.edu and run the following command:
+If you are using SDF or if your home directory is in AFS, ssh to ocio-gpu01.slac.stanford.edu and run the following command:
 ```
 singularity exec -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac-w-slurm-cli-20200714.sif python3 -m pip install dask-jobqueue distributed
 ```
