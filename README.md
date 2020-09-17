@@ -5,7 +5,7 @@
 
 <script type="text/javascript" src="/tier3docs/scripts/readMoreOrLess.js"></script>
 
-# Public Documentation for US ATLAS Shared Tier 3s
+# Public Documentation for US ATLAS Analysis Facilities
 
 <b>[Privacy Disclaimer](/tier3docs/privacyDisclaimer)</b>
 
