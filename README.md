@@ -40,7 +40,7 @@ is a two-step process: becoming a SLAC laboratory user, and then obtain computin
 
 <button onclick="readMoreOrLess('acctsLess', 'acctsMore', 'acctsBtn')" id="acctsBtn">More</button>
 
-### <span style="color:orange">SDF: New SLAC computing environment and change to SLAC computing account</span>
+### <a name="sdf"></a><span style="color:orange">SDF: New SLAC computing environment and change to SLAC computing account</span>
 
 Note: Except the JupyterLab, the existing computing accounts and environment for ATLAS will continue until the hardware retires, which is a year or two from now (September 2020).
 
