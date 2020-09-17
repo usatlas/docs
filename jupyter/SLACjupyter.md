@@ -2,7 +2,7 @@
 
 ## Table of contents
 + [Login to JupyterLab at SLAC](#login-to-jupyterlab-at-slac)
-+ [A note about yoru AFS or GPFS spaces](#a-note-for-afs-users)
++ [A note about yoru AFS or GPFS spaces](#a-note-about-your-afs-or-gpfs-spaces)
 + [How to launch JupyterLab at SLAC](#how-to-launch-jupyterlab-at-slac)
 + [Run your own Jupyter environment](#run-your-own-jupyter-environment)
 + [An alternative way to use the ATLAS Jupyter environment at SLAC](#an-alternative-way-to-use-the-atlas-jupyter-environment-at-slac)
@@ -14,7 +14,7 @@
 
 Before accessing [the SLAC JupyterLab](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter), please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). 
 
-You need to use your "SLAC ID" to login to SLAC JupyterLab. For more information regarding "SLAC ID", please refer to [SDF: New SLAC...](../README.md/#sdf:-new-slac-computing-environment-and-change-to-slac-computing-account).
+You need to use your "SLAC ID" (aka SLAC Windows account) to login to SLAC JupyterLab. For more information regarding "SLAC ID", please refer to [SDF: New SLAC...](../README.md/#sdf:-new-slac-computing-environment-and-change-to-slac-computing-account).
 
 ## A note about your AFS or GPFS spaces
 
@@ -26,7 +26,8 @@ Once you login, click "Interactive Apps" from the top menu bar. Then choose "Jup
 
 1. In "Jupyter Instance" box, choose "atlas-jupyter/20200502". You can choose Jupyter Instances for other experiments but there is no guarantee that those instances will work for you.
 2. Check the "Use JupyterLab instead of Jupyter Notebook?" box.
-3. Choose hours, # CPUs, memory, # GPUs and GPU type, then click "launch". Note that your Jupyter work runs as a SLURM job. So choose only what you need to ensure speedy launching of your job.
+3. In the "Partition" box, you can type in "usatlas" or "shared". Compare to "usatlas", "shared" may give you a quicker access but you may face preemption. You have been told that you can type in others here, please do so as those usually give your access to other SLURM partitions.
+4. Choose hours, # CPUs, memory, # GPUs and GPU type, then click "launch". Note that your Jupyter work runs as a SLURM job. So choose only what you need to ensure speedy launching of your job.
 
 ## Run your own Jupyter environment
 
