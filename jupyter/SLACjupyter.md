@@ -1,7 +1,8 @@
-# [The SLAC JupyterLab](https://sdf.slac.stanford.edu)
+# [The SLAC JupyterLab](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter)
 
 ## Table of contents
-+ [A note for AFS users](#a-note-for-afs-users)
++ [Login to JupyterLab at SLAC](#login-to-jupyterlab-at-slac)
++ [A note about yoru AFS or GPFS spaces](#a-note-for-afs-users)
 + [How to launch JupyterLab at SLAC](#how-to-launch-jupyterlab-at-slac)
 + [Run your own Jupyter environment](#run-your-own-jupyter-environment)
 + [An alternative way to use the ATLAS Jupyter environment at SLAC](#an-alternative-way-to-use-the-atlas-jupyter-environment-at-slac)
@@ -9,27 +10,15 @@
 + [Extend ATLAS JupyterLab Functionalities](#extend-atlas-jupyterlab-functionalities)
 + [Getting help](#getting-help)
 
-Before accessing [the SLAC JupyterLab](https://sdf.slac.stanford.edu), please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). Also before you login, check whether your home directory is in /gpfs. If so, continue the login process. 
+## Login to JupyterLab at SLAC
 
-New users (since later 2017) likely will have their home directories on GPFS, and were never given an AFS space. To check, login to centos7.slac.stanford.edu and do `df .`. 
+Before accessing [the SLAC JupyterLab](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter), please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). 
 
-## A note for AFS users
+You need to use your "SLAC ID" to login to SLAC JupyterLab. For more information regarding "SLAC ID", please refer to [SDF: New SLAC...](../README.md/#SDF).
 
-If your home directory in /afs, please e-mail unix-admin@slac.stanford.edu with a message "my home dir is in AFS but I want to use JupyterLab at SDF", and wait for their green light.
+## A note about your AFS or GPFS spaces
 
-(You don't need to care about this: The unix-admin will create a directory `/gpfs/slac/staas/fs1/g/jupyter/$(id -gn)/$(id -un)` and make you the owner.)
-
-After you get a green light from unix-admin, login the centos7.slac.stanford.edu and run ```sh /gpfs/slac/staas/fs1/g/jupyter/ood/convert.sh```. You only need to do this once. Note that this script will rename a few of your directories by adding a ".orig" to them:
-```
-$HOME/ondemand  
-$HOME/.local/share/jupyter
-$HOME/.jupyter
-$HOME/.ipython
-```
-
-You should also ask for a GPFS space at `/gpfs/slac/atlas/fs1/u/$(id -un)`. You can include this request along with the e-mail to unix-admin.
-
-You may ask why? This is because Jupyter via the above SLAC JupyterLab link won't be able to write to AFS. So you can not create or modify a file when your JupyterLab's left panel is in an AFS directory. Hence you need a GPFS space.
+SLAC JupyterLab will put you on a new 25GB home directory /sdf/home/<your_username_initial>/<your_username>. If you have GPFS or AFS spaces at SLAC, you will find that the JuoyterLab can access GPFS spaces but can not access AFS space. You will need to manually copy your files from AFS to the new home.
 
 ## How to launch JupyterLab at SLAC
 
