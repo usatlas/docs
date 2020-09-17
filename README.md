@@ -48,9 +48,9 @@ SLAC is building a new computing facility - SLAC Shared Scientific Data Facility
 
 SLAC SDF will use a new identity management system (aka <span style="color:red">"SLAC ID"</span> - it will be a computer account to login to everything at SLAC). If you already have a SLAC Windows account, you are all set (SLAC ID = SLAC Windows account) and go to the next paragraph. If you don't have a SLAC Windows account, please go to [SLAC SDF page and click "Accounts Portal"](https://ondemand-dev.slac.stanford.edu/public/doc/#/accounts-and-access?id=access). After this, give it a hour for the changes to be proprogated through SLAC computing.
 
-You can then ssh to sdf-login01.slac.stanford.edu (or sdf-login02). For all users, the first time you login, a new home directory of 25GB will be created. You can then logout and follow the Jupyter link below.
+You can then ssh to sdf-login01.slac.stanford.edu (or sdf-login02). The first time you login, a new home directory of 25GB will be created. You can then logout and follow the JupyterLab link below.
 
-What will happen to your space? For GPFS users, the ATLAS GPFS spaces will be accessible. It just won't be your home directory. For AFS users, you will need to manually copy your files in AFS to SDF since SDF does not support AFS.
+What will happen to your GPFS or AFS space? The ATLAS GPFS spaces will be accessible. It just won't be your home directory. For AFS spaces, you will need to manually copy your files in AFS to SDF since SDF does not support AFS.
 
 ## Data analysis tutorials 
 [A tutorial of analysis example at Tier3s of BNL/SLAC is available at here](/tier3docs/Tutorial-2019Aug).
