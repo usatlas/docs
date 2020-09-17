@@ -29,12 +29,12 @@ To test whether your PYCUDA works, try [this python script](pycuda.test.py.txt) 
 
 To enable DASK distributed scheduling/running with SLURM, first make sure when you start a JupyterLab instance, you choose an image that supports SLURM job submission, such as `atlas-jupyter-w-slurm-cli/20200714`. You will also need to use pip3 to install `dask-jobqueue` and `distributed`:
 
-If you home directory is in GPFS, open a Terminal in JupyterLab and run the following command:
+If you are using SDF or if you home directory is in GPFS, open a Terminal in JupyterLab and run the following command:
 ```
 python3 -m pip install dask-jobqueue distributed
 ````
 
-If you are using SDF or if your home directory is in AFS, ssh to ocio-gpu01.slac.stanford.edu and run the following command:
+If your home directory is in AFS, ssh to ocio-gpu01.slac.stanford.edu and run the following command:
 ```
 singularity exec -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac-w-slurm-cli-20200714.sif python3 -m pip install dask-jobqueue distributed
 ```
