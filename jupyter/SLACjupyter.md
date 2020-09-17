@@ -20,6 +20,8 @@ You need to use your "SLAC ID" (aka SLAC Windows account) to login to SLAC Jupyt
 
 SLAC JupyterLab will put you on a new 25GB home directory /sdf/home/<your_username_initial>/<your_username>. If you have GPFS or AFS spaces at SLAC, you will find that the JuoyterLab can access GPFS spaces but can not access AFS space. You will need to manually copy your files from AFS to the new home.
 
+Note that in JupyterLab's terminal, you can run scp/sftp to copy files.
+
 ## How to launch JupyterLab at SLAC
 
 Once you login, click "Interactive Apps" from the top menu bar. Then choose "Jupyter". You will need to make a few choices:
