@@ -14,13 +14,11 @@
 
 Before accessing [the SLAC JupyterLab](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter), please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). 
 
-You need to use your "SLAC ID" (aka SLAC Windows account) to login to SLAC JupyterLab. For more information regarding "SLAC ID", please refer to [SDF: New SLAC...](../README.md/#sdf:-new-slac-computing-environment-and-change-to-slac-computing-account).
+You need to use your "SLAC ID" (aka SLAC Windows account) to login to SLAC JupyterLab. For more information regarding "SLAC ID", please refer to [SDF: New SLAC...](../README.md#sdf:-new-slac-computing-environment-and-change-to-slac-computing-account).
 
 ## A note about your AFS or GPFS spaces
 
-SLAC JupyterLab will put you on a new 25GB home directory /sdf/home/<your_username_initial>/<your_username>. If you have GPFS or AFS spaces at SLAC, you will find that the JuoyterLab can access GPFS spaces but can not access AFS space. You will need to manually copy your files from AFS to the new home.
-
-Note that in JupyterLab's terminal, you can run scp/sftp to copy files.
+SLAC JupyterLab will put you on a new 25GB home directory `/sdf/home/<your_username_initial>/<your_username>`. If you have GPFS or AFS spaces at SLAC, you will find that the JuoyterLab can access GPFS spaces but can not access AFS space. You will need to manually copy your files from AFS to the new home. In JupyterLab's terminal, you can run scp/sftp to copy files.
 
 ## How to launch JupyterLab at SLAC
 
