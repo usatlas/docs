@@ -6,7 +6,7 @@ Though pip, you can add more packages to your python/Jupyter. The folloing are e
 
 If you are using SDF or if your home directory is in GPFS, open a Terminal in JupyterLab and run the following command:
 ```
-python3 -m pip install pycuda
+python3 -m pip install pycuda --user
 ````
 
 If your home directory is in AFS, ssh to ocio-gpu01.slac.stanford.edu and run the following command:
@@ -31,12 +31,12 @@ To enable DASK distributed scheduling/running with SLURM, first make sure when y
 
 If you are using SDF or if you home directory is in GPFS, open a Terminal in JupyterLab and run the following command:
 ```
-python3 -m pip install dask-jobqueue distributed
+python3 -m pip install --ignore-installed dask numpy dask-jobqueue distributed --user
 ````
 
 If your home directory is in AFS, ssh to ocio-gpu01.slac.stanford.edu and run the following command:
 ```
-singularity exec -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac-w-slurm-cli-20200714.sif python3 -m pip install dask-jobqueue distributed
+singularity exec -B /cvmfs,/gpfs,/scratch,/nfs,/afs /cvmfs/atlas.sdcc.bnl.gov/jupyter/t3s/slac/singularity/atlas-slac-w-slurm-cli-20200714.sif python3 -m pip install --ignore-installed dask numpy dask-jobqueue distributed --user
 ```
 To test whether it works, try [this python script](dask.slurm.test.py.txt) in JupyterLab. Please pay attention to the line `python="/usr/bin/python3"` in the script - do not forget about it. 
 
