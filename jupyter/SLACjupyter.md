@@ -1,4 +1,4 @@
-# [The SLAC JupyterLab](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter)
+# [The SLAC JupyterLab](https://sdf.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter)
 
 ## Table of contents
 + [Login to JupyterLab at SLAC](#login-to-jupyterlab-at-slac)
@@ -12,7 +12,7 @@
 
 ## Login to JupyterLab at SLAC
 
-Before accessing [the SLAC JupyterLab](https://ondemand-dev.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter), please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). 
+Before accessing [the SLAC JupyterLab](https://sdf.slac.stanford.edu/public/doc/#/interactive-compute?id=jupyter), please [apply for a SLAC computing account](https://atlas.slac.stanford.edu/using-the-slac-computing-resources). 
 
 You need to use your "SLAC ID" (aka SLAC Windows account) to login to SLAC JupyterLab. For more information regarding "SLAC ID", please refer to ["SDF: New SLAC..."](../#sdf).
 
