@@ -37,12 +37,12 @@ The ATLAS instance we built may not satisfy your need. If you have your own Jupy
 2. Instead of choosing the "atlas-jupyter..." instance, you choose "Custom Singularity Image" or "[Custom Conda Environment](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)".
 3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to the box to prepare launching your Jupyter environment. Below are example scripts to launch Jupyter from a Singularity container:
 
-```
+~~~
 export SINGULARITY_IMAGE=/gpfs/slac/.../my_singularity_image.sif
 function jupyter() { singularity exec --nv -B /gpfs,/scratch,/nfs,/gpfs ${SINGULARITY_IMAGE} jupyter $@ }
-```
+
 or from a Conda environment (assuming Anaconda 3 is installed at ~/anaconda3):
-~~~
+
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate
 ~~~
