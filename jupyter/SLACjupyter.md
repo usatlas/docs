@@ -35,7 +35,9 @@ The ATLAS instance we built may not satisfy your need. If you have your own Jupy
 
 1. Following the same steps above to launch Jupyter at SLAC.
 2. Instead of choosing the "atlas-jupyter..." instance, you choose "Custom Singularity Image" or "[Custom Conda Environment](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)".
-3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to the box to prepare launching your Jupyter environment. Below are example scripts to launch Jupyter from a Singularity container:
+3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to the box to prepare launching your Jupyter environment. 
+4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command (or Shell function) called "jupyter" for it to run. It will then run one of the following commands, `jupyter notebook` or `jupyter lab` (depend on whether you choose Jupyter Notebook or Jupyter Lab) to launch your Jupyter environment.
+5. Below are example scripts to prepare for launching Jupyter from a Singularity container:
 
 ~~~
 export SINGULARITY_IMAGE=/gpfs/slac/.../my_singularity_image.sif
@@ -46,7 +48,7 @@ or from a Conda environment (assuming Anaconda 3 is installed at ~/anaconda3):
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate
 ~~~
-4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command (or Shell function) called "jupyter" for it to run. It will then run one of the following commands, `jupyter notebook` or `jupyter lab` (depend on whether you choose Jupyter Notebook or Jupyter Lab) to launch your Jupyter environment:
+
 
 ## An alternative way to use the ATLAS Jupyter environment at SLAC
 
