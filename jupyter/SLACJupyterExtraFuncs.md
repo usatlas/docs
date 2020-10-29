@@ -57,7 +57,7 @@ Suppose you already have miniconda3 or Anaconda3 install:
 1. Create a new Conda environment, and name it "mypyhf": `conda create --name mypyhf`
 2. Activate the environment: `conda activate mypyhf`
 3. Install "ipykernel" and "pyhf" in this Conda environment: `conda install ipykernel pyhf`
-4. Make this 'mypyhf' environment available in Jupyter: `python -m ipykernel install --user --name=mypyhf`
+4. Make this 'mypyhf' environment available in Jupyter: `python3 -m ipykernel install --user --name=mypyhf`
 5. (To reverse, do `jupyter kernelspec uninstall mypyhf`)
 
 After this and restart the Jupyter environment, you will see a new kernel call `mypyhf`
