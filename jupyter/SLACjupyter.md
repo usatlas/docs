@@ -36,7 +36,7 @@ The ATLAS instance we built may not satisfy your need. If you have your own Jupy
 1. Following the same steps above to launch Jupyter at SLAC.
 2. Instead of choosing the "atlas-jupyter..." instance, you choose "Custom Singularity Image" or "[Custom Conda Environment](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)".
 3. The "Commands to initate Jupyter" box will be pre-filled with commands to prepare your instance. You can edit/paste whatever Shell script to the box to prepare launching your Jupyter environment. 
-4. A backend launching script will "source" your Shell script. It expects that after "souring", there is a command (or Shell function) called "jupyter" for it to run. It will then run one of the following commands, `jupyter notebook` or `jupyter lab` (depend on whether you choose Jupyter Notebook or Jupyter Lab) to launch your Jupyter environment.
+4. A backend launching script will "source" your Shell script. It expects that after "sourcing", there is a command (or Shell function) called "jupyter" for it to run. It will then run one of the following commands, `jupyter notebook` or `jupyter lab` (depend on whether you choose Jupyter Notebook or Jupyter Lab) to launch your Jupyter environment.
 5. Below are example scripts to prepare for launching Jupyter from a Singularity container:
 
 ~~~
@@ -69,7 +69,7 @@ Note `centos7.slac.stanford.edu` is a DNS alias of several machines `cent7[a-d].
 The Jupyter environment provides several kernels and extensions. This includes:
 1. python2 with pyroot and uproot. By default, <b>AnalysisBase,21.2.111</b> is loaded before the pyroot2 kernel is launched. To overwrite this, create a file [$HOME/notebooks/.user_setups](SLACuser_setups.txt) in your home directory (even if your home directory is in AFS)
 2. ROOT C++. The ATLAS environment is set before the kernel is launched. The overwrite method is the same as the above. 
-3. python3 with pyroot and uproot. This kernel also includes ML packages such as Tensorflow and Keras for Nvidia GPUs. To use the GPU, choose "# of GPUs" and "GPU type" before launching Jupyter. 
+3. python3 with pyroot and uproot/awkward. This kernel also includes ML packages such as Tensorflow and Keras for Nvidia GPUs. To use the GPU, choose "# of GPUs" and "GPU type" before launching Jupyter. 
 4. Terminal console for simple interactive use, e.g. file managements. It also include python2.7/python3, gcc/g++, gdb, make, cmake3, xrootd-clients, openssh-client, curl, vi, etc.
 5. Markdown document editor and previewer. You can edit and preview in two tabs simultaneously. 
 
