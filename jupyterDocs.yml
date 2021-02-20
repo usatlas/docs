@@ -10,3 +10,4 @@ nav:
         - 'How to get information about an xAOD in python': examples/xAODcheck.md
         - 'Read xAODs using PyROOT': https://github.com/usatlas/tier3docs/blob/master/jupyter/examples/pyROOT_example.ipynb
         - 'Info about uproot and xAOD': examples/convert_specific_variables.py.txt
+theme: readthedocs
