@@ -1,0 +1,8 @@
+site_name: Data Analysis Tutorial at US ATLAS AFs (2019-Aug)
+docs_dir: Tutorial-2019Aug
+nav:
+    - 'Introduction': README.md
+    - 'Tutorial of Analysis Examples at BNL': BNL/README.md
+    - 'Tutorial of Analysis Examples at SLAC': SLAC/README.md
+    - 'Tutorial of Analysis Examples on the Grid': Grid/README.md
+theme: readthedocs
