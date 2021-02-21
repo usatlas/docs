@@ -1,4 +1,4 @@
 version: 2
 
 mkdocs:
-  configuration: jupyterDocs.yml
+  configuration: mkdocs.yml
