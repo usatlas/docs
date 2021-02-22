@@ -7,7 +7,7 @@
 
 # Public Documentation for US ATLAS Analysis Facilities
 
-<b>[Privacy Disclaimer](/tier3docs/privacyDisclaimer)</b>
+<b>[Privacy Disclaimer](privacyDisclaimer)</b>
 
 ## Introduction to the US ATLAS Shared Tier 3s
 US ATLAS hosted two shared Tier 3 at BNL and SLAC, also known as Analysis Facilities (AF). These
@@ -53,7 +53,7 @@ What will happen to your GPFS or AFS spaces? The ATLAS GPFS spaces will be acces
 <span style="color:blue">Note: Except the JupyterLab, the existing computing accounts and environment for ATLAS will continue until the hardware retires, which is a year or two from now (September 2020).</span>
 
 ## Data analysis tutorials 
-[A tutorial of analysis example at Tier3s of BNL/SLAC is available at here](/tier3docs/Tutorial-2019Aug).
+[A tutorial of analysis example at Tier3s of BNL/SLAC is available at here](Tutorial-2019Aug).
 It was initially given at the Aug. 2019 US ATLAS Week at University of Massachusetts Amherst.
 
 ## JupyterLab at AFs
