@@ -10,7 +10,6 @@ Though pip, you can add more packages to your python/Jupyter. The folloing are e
 ## Install PYCUDA
 
 Open a Terminal in JupyterLab and run the following command:
-
 ```
 python3 -m pip install pycuda --user
 ```
@@ -24,7 +23,6 @@ To test whether your PYCUDA works, try [this python script](pycuda.test.py.txt) 
 To enable DASK distributed scheduling/running with SLURM, first make sure when you start a JupyterLab instance, you choose an image that supports SLURM job submission, such as `atlas-jupyter-w-slurm-cli/20200714`. You will also need to use pip3 to install `dask-jobqueue` and `distributed`:
 
 Open a Terminal in JupyterLab and run the following command:
-
 ```
 python3 -m pip install --ignore-installed dask numpy dask-jobqueue distributed --user
 ```
