@@ -16,6 +16,7 @@ Jupyter instances running under the HPC JupyterHub are run as SLURM batch jobs o
 ## Kernels and extensions in the ATLAS Jupyter environment
 
 The Jupyter environment provides several kernels and extensions. This includes:
+
 1. python2 with pyroot and uproot. By default, <b>AnalysisBase,21.2.111</b> is loaded before the pyroot2 kernel is launched. To overwrite this, create a file [$HOME/notebooks/.user_setups](SLACuser_setups.txt) in your home directory (even if your home directory is in AFS)
 2. ROOT C++. The ATLAS environment is set before the kernel is launched. The overwrite method is the same as the above. 
 3. python3 with pyroot and uproot. 
